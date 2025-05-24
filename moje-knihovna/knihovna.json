@@ -1,0 +1,9 @@
+{
+  "books": {
+    "-Nabcdef123": {
+      "title": "Bible",
+      "author": "Neznámý",
+      "createdAt": 1234567890
+    }
+  }
+}

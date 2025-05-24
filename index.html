@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moje Knihovna</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-database-compat.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>📚 Moje Knihovna</h1>
+        
+       
+
+<form id="bookForm">
+    <input type="text" id="title" placeholder="Název knihy" required>
+    <input type="text" id="author" placeholder="Autor" required>
+    <input type="number" id="year" placeholder="Rok vydání" min="1000" max="2025"> 
+    <button type="submit">Přidat knihu</button>
+</form>
+
+<div class="search-container">
+    <input type="text" id="searchInput" placeholder="Hledat knihu, autora nebo rok...">
+    <button id="searchButton">Hledat</button>
+</div>
+        
+        <div id="bookList" class="book-list"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
